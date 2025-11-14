@@ -64,7 +64,7 @@ make checkdoc
 
 ### Related Tools
 - **[clojure-mcp](../clojure-mcp/)**: MCP server implementation for protocol reference
-- **[opencode-openai-codex-auth](../opencode-openai-codex-auth/)**: OAuth patterns for authentication
+- **[open-hax/codex](../open-hax/codex/)**: OAuth patterns for authentication
 - **[promethean](../promethean/)**: Agent orchestration patterns
 
 ### 🔗 Comprehensive Cross-References

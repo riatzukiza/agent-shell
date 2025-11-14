@@ -24,9 +24,9 @@ This document provides comprehensive cross-references to all related repositorie
 ### 🔧 Authentication & Security Dependencies
 
 #### **OAuth Authentication Patterns**
-- **[opencode-openai-codex-auth](https://github.com/numman-ali/opencode-openai-codex-auth)** - OpenAI Codex OAuth authentication plugin
-  - [AGENTS.md](https://github.com/numman-ali/opencode-openai-codex-auth/blob/main/AGENTS.md)
-  - [README.md](https://github.com/numman-ali/opencode-openai-codex-auth/blob/main/README.md)
+- **[open-hax/codex](https://github.com/open-hax/codex)** - OpenAI Codex OAuth authentication plugin
+  - [AGENTS.md](https://github.com/open-hax/codex/blob/main/AGENTS.md)
+  - [README.md](https://github.com/open-hax/codex/blob/main/README.md)
   - **Integration**: OAuth flow patterns for OpenAI Codex integration in Agent Shell
 
 #### **TypeScript SDK Integration**
@@ -91,14 +91,14 @@ cd ../promethean && pnpm --filter @promethean-os/agent test
 
 ### **Authentication Integration**
 #### **OAuth Pattern Integration**
-- **OpenAI Codex**: Use [opencode-openai-codex-auth](https://github.com/numman-ali/opencode-openai-codex-auth) OAuth patterns
+- **OpenAI Codex**: Use [open-hax/codex](https://github.com/open-hax/codex) OAuth patterns
 - **TypeScript SDK**: Integrate with [moofone/codex-ts-sdk](https://github.com/moofone/codex-ts-sdk) authentication
 - **Cross-Language**: Ensure authentication compatibility between Elisp and TypeScript
 
 #### **Authentication Development**
 ```bash
 # OAuth pattern development
-cd ../opencode-openai-codex-auth
+cd ../open-hax/codex
 pnpm build && pnpm test
 
 # TypeScript SDK integration
@@ -158,7 +158,7 @@ M-x agent-shell-test-in-container
 4. **Testing**: Cross-protocol compliance testing
 
 ### **Authentication Development Workflow**
-1. **Pattern Study**: Analyze [opencode-openai-codex-auth](https://github.com/numman-ali/opencode-openai-codex-auth) OAuth patterns
+1. **Pattern Study**: Analyze [open-hax/codex](https://github.com/open-hax/codex) OAuth patterns
 2. **Cross-Language Integration**: Ensure compatibility with [moofone/codex-ts-sdk](https://github.com/moofone/codex-ts-sdk)
 3. **Agent Shell Implementation**: Implement authentication in Elisp
 4. **Testing**: Multi-provider authentication testing
@@ -176,7 +176,7 @@ M-x agent-shell-test-in-container
 # Full agent development environment
 cd ../promethean && pnpm build
 cd ../clojure-mcp && pnpm install
-cd ../opencode-openai-codex-auth && pnpm build
+cd ../open-hax/codex && pnpm build
 cd ../moofone/codex-ts-sdk && pnpm build
 
 # Agent Shell development
@@ -191,7 +191,7 @@ cd ../clojure-mcp && pnpm test --protocol
 cd ../promethean && pnpm --filter @promethean-os/agent test --acp
 
 # Authentication testing
-cd ../opencode-openai-codex-auth && pnpm test --oauth
+cd ../open-hax/codex && pnpm test --oauth
 cd ../moofone/codex-ts-sdk && pnpm test --auth
 
 # Agent Shell integration
@@ -213,7 +213,7 @@ M-x agent-shell-container-test
 
 ### **Choosing Integration Target**
 - **Protocol development?** → [clojure-mcp](https://github.com/bhauman/clojure-mcp) for reference + [promethean](https://github.com/riatzukiza/promethean) for agents
-- **Authentication development?** → [opencode-openai-codex-auth](https://github.com/numman-ali/opencode-openai-codex-auth) + [moofone/codex-ts-sdk](https://github.com/moofone/codex-ts-sdk)
+- **Authentication development?** → [open-hax/codex](https://github.com/open-hax/codex) + [moofone/codex-ts-sdk](https://github.com/moofone/codex-ts-sdk)
 - **Multi-agent testing?** → All agent repositories for comprehensive testing
 - **Container development?** → [dotfiles](https://github.com/riatzukiza/devel/tree/main/dotfiles) + all repositories
 
